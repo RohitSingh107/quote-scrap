@@ -8,6 +8,9 @@ packages = [{include = "quote_scrap"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+flask = "^2.3.2"
+beautifulsoup4 = "^4.12.2"
+requests = "^2.31.0"
 
 
 [build-system]
