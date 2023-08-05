@@ -28,4 +28,4 @@ def display_quotes():
     return render_template("index.html", quotes=quotes)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=8080, host='0.0.0.0')
