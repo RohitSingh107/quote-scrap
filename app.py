@@ -13,7 +13,11 @@ def scrape_quotes():
     quotes = []
     for quote in soup.find_all("div", class_="quote"):
         text = quote.find("span", class_="text").get_text()
-        author = quote.find("span", class_="author").get_text()
+        # print(f"quote is {quote}------------------------------------------------------------------------------------------------------")
+
+        # print(f"quote length is {len(quotes)}")
+        author = quote.find("small", class_="author").get_text()
+        print(f"author is {author}----------------------------------------------------------------------------")
         quotes.append({"text": text, "author": author})
     return quotes
 
